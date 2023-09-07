@@ -90,7 +90,7 @@ a{
 }
 
 img{
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block;
 }
@@ -385,7 +385,7 @@ padding: 0;
 }
 
 .about__img{
-  justify-self: center;
+  justify-self: absolute;
   width: 220px;
   border-radius: .5rem; 
 }
