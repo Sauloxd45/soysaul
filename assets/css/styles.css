@@ -113,7 +113,7 @@ img{
 
 .section-subtitle{
   display: block ;
-  font-size: var(--smaller-font-size);
+  font-size: var(1rem);
   font-weight: var(--font-semi-bold);
 }
 /*===== LAYOUT =====*/
@@ -365,6 +365,8 @@ padding: 0;
 
 /*===== ABOUT =====*/
 
+
+
 .about__data{
   text-align: center;
 
@@ -385,7 +387,7 @@ padding: 0;
 }
 
 .about__img{
-  justify-self: absolute;
+  justify-self: center;
   width: 220px;
   border-radius: .5rem; 
 }
@@ -709,7 +711,6 @@ footer__title{
 
   }
 
-  .about__container,
   .qualification__container,
   .services__container,
   .portafolio__container{
@@ -783,7 +784,7 @@ footer__title{
   }
 
   .about__description{
-    text-align: initial;
+    text-align: absolute;
 
   }
 
@@ -829,6 +830,7 @@ footer__title{
 }
 
 @media screen and (min-width:1024px) {
+
   .bd-container{
     margin-left: auto;
     margin-right: auto;
