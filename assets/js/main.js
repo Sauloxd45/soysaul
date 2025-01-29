@@ -117,3 +117,25 @@ gsap.from('.nav__logo, .nav__toggle', {opacity: 0, duration: 2, delay: 1.5, y:25
 gsap.from('.nav__item  ', {opacity: 0, duration: 2, delay: 1.8, y:25, ease:'expo.out', stagger:.2})
 gsap.from('.home__social-icon ', {opacity: 0, duration: 2, delay: 1, y:25, ease:'expo.out', stagger:.2})
 
+/*===== Email JS=====*/
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_6crqybr';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
